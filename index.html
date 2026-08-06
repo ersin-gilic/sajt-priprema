@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priprema za Prijemni Ispit iz Matematike | ETF i FON Beograd</title>
+    <title>Priprema za Prijemni i Privatni Časovi | Matematika ETF, FON i Tehnički Fakulteti</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; line-height: 1.6; }
-        header { background-color: #003366; color: white; text-align: center; padding: 2.5rem 1rem; }
-        header h1 { margin: 0; font-size: 2.2rem; }
-        header p { margin-top: 0.5rem; font-size: 1.15rem; opacity: 0.9; }
+        header { background-color: #003366; color: white; text-align: center; padding: 3rem 1rem; }
+        header h1 { margin: 0; font-size: 2.3rem; }
+        header p { margin-top: 0.8rem; font-size: 1.15rem; opacity: 0.95; max-width: 800px; margin-left: auto; margin-right: auto; }
         .container { max-width: 950px; margin: 2rem auto; padding: 0 1rem; }
         .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem; }
         h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 0.5rem; margin-top: 0; }
+        
+        /* Grid za probne testove */
         .preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
-        .preview-item { background: #fafafa; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; }
-        .preview-item h3 { margin-top: 0; color: #003366; font-size: 1.2rem; text-align: center; }
-        .pdf-viewer-container { width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }
+        .preview-item { background: #fafafa; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; text-align: center; }
+        .preview-item h3 { margin-top: 0; color: #003366; font-size: 1.2rem; }
+        .pdf-viewer-container { width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; margin-bottom: 1rem; }
         object { width: 100%; height: 100%; }
+        
+        /* Dugmići */
+        .download-btn { display: inline-block; background-color: #003366; color: white; padding: 0.7rem 1.3rem; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.95rem; transition: background 0.2s; }
+        .download-btn:hover { background-color: #002244; }
+        .contact-btn { display: inline-block; background-color: #28a745; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.05rem; margin-top: 1rem; }
+        .contact-btn:hover { background-color: #218838; }
+
+        /* Privatni časovi i usluge */
+        .services-list { list-style-type: none; padding: 0; }
+        .services-list li { padding: 0.8rem 0; border-bottom: 1px solid #eee; font-size: 1.05rem; }
+        .services-list li:last-child { border-bottom: none; }
+        .services-list strong { color: #003366; }
+        
         .blur-overlay { background: #e9ecef; border: 2px dashed #003366; padding: 1.5rem; border-radius: 6px; text-align: center; margin-top: 1.5rem; }
         .blur-overlay p { font-weight: bold; font-size: 1.1rem; margin: 0; color: #003366; }
+        
+        /* Podaci za uplatu */
         .payment-info { background: #f8f9fa; border-left: 4px solid #003366; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 1rem; }
         .payment-info ul { list-style: none; padding: 0; margin: 0; }
         .payment-info li { padding: 0.5rem 0; border-bottom: 1px solid #eee; font-size: 1.05rem; }
         .payment-info li:last-child { border-bottom: none; }
+        
         @media (max-width: 500px) {
             .preview-grid { grid-template-columns: 1fr; }
         }
@@ -31,15 +49,34 @@
 <body>
 
     <header>
-        <h1>Priprema za Prijemni Ispit iz Matematike</h1>
-        <p>Specijalizovani materijali i zbirka detaljno rešenih zadataka za ETF i FON u Beogradu</p>
+        <h1>Priprema Prijemnog & Privatni Časovi Matematike</h1>
+        <p>Specijalizovani materijali, zbirke rešenih zadataka i individualna nastava za prijemne ispite i fakultetske matematičke predmete (ETF, FON i ostali tehnički fakulteti).</p>
     </header>
 
     <div class="container">
+
+        <!-- PRIVATNI ČASOVI -->
+        <div class="card">
+            <h2>Privatni Časovi & Priprema Ispita</h2>
+            <p>Pored materijala za prijemni ispit, držim <strong>individualne i grupne privatne časove</strong> prilagođene studentima i budućim studentima:</p>
+            
+            <ul class="services-list">
+                <li><strong>🎓 Priprema prijemnog ispita za fakultete:</strong> Detaljan rad po oblastima za ETF, FON, MATF, TMF, FTN i sve ostale tehničke i prirodno-matematičke fakultete.</li>
+                <li><strong>📘 Matematika 1 & 2 (ETF / FON / Tehnički fakulteti):</strong> Kompletna priprema kolokvijuma i ispita (Analiza, Linearna algebra, Analitička geometrija, Višestruki integrali, Diferencijalne jednačine).</li>
+                <li><strong>📐 Diskretna matematika i Verovatnoća:</strong> Specijalizovana priprema zadataka i teorije za FON, ETF i srodne smerove.</li>
+                <li><strong>💻 Online časovi & Rad uživo:</strong> Interaktivna nastava uz rad na grafičkoj tabli, snimke predavanja i direktne konsultacije.</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 0.5rem;"><strong>Zakažite čas ili se raspitajte o terminima:</strong></p>
+                <a href="https://wa.me/381640000000" class="contact-btn" target="_blank">📱 Kontaktirajte me na WhatsApp / Viber</a>
+            </div>
+        </div>
+
         <!-- BESPLATAN PREGLED TESTOVA -->
         <div class="card">
-            <h2>Besplatan Pregled (Probni Testovi)</h2>
-            <p>Ispod možete prelistati besplatne primere probnih testova i uveriti se u kvalitet i postupnost rešenja zadataka:</p>
+            <h2>Besplatan Pregled & Preuzimanje Probnih Testova</h2>
+            <p>Prelistajte besplatne primere ili ih preuzmite na svoj uređaj radi lakše pripreme:</p>
             
             <div class="preview-grid">
                 <!-- ETF PREGLED -->
@@ -50,6 +87,7 @@
                             <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-etf.pdf.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
                         </object>
                     </div>
+                    <a href="probno-etf.pdf.pdf" download class="download-btn">📥 Preuzmi probni test (ETF)</a>
                 </div>
 
                 <!-- FON PREGLED -->
@@ -60,6 +98,7 @@
                             <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-fon.pdf.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
                         </object>
                     </div>
+                    <a href="probno-fon.pdf.pdf" download class="download-btn">📥 Preuzmi probni test (FON)</a>
                 </div>
             </div>
 
@@ -70,8 +109,8 @@
 
         <!-- UPUTSTVO ZA UPLATU -->
         <div class="card">
-            <h2>Uputstvo za Otključavanje Pristupa</h2>
-            <p>Da biste dobili godišnji pristup celokupnoj bazi rešenih zadataka i materijala, izvršite uplatu prema sledećim podacima:</p>
+            <h2>Uputstvo za Otključavanje Pristupa Materijalima</h2>
+            <p>Da biste dobili godišnji pristup celokupnoj bazi rešenih zadataka i materijala za prijemni, izvršite uplatu prema sledećim podacima:</p>
             
             <div class="payment-info">
                 <ul>
@@ -83,9 +122,10 @@
             </div>
             
             <p style="margin-top: 1.5rem; text-align: center;">
-                <em>Nakon uplate, sliku uplatnice pošaljite na email ili Viber/WhatsApp kako biste dobili vaš pristupni kod.</em>
+                <em>Nakon uplate, sliku uplatnice pošaljite na Viber/WhatsApp kako biste dobili vaš pristupni kod.</em>
             </p>
         </div>
+
     </div>
 
 </body>
