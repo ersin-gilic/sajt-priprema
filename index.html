@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priprema za Prijemni i Privatni Časovi | Matematika ETF, FON i Tehnički Fakulteti</title>
+    
+    <!-- SEO Meta Tagovi za Google Pretragu -->
+    <meta name="description" content="Besplatni probni testovi, detaljno rešeni zadaci i privatni časovi matematike za prijemni ispit i fakultete (ETF, FON, MATF, FTN).">
+    <meta name="keywords" content="matematika prijemni, etf prijemni matematika, fon rešeni zadaci, privatni časovi matematika beograd, priprema za prijemni matematika, matematika 1 etf, matematika 2 fon, probni test etf rešenja">
+    <meta name="author" content="Ersin Gilić">
+
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; line-height: 1.6; }
         header { background-color: #003366; color: white; text-align: center; padding: 3rem 1rem; }
@@ -35,11 +41,14 @@
         .blur-overlay { background: #e9ecef; border: 2px dashed #003366; padding: 1.5rem; border-radius: 6px; text-align: center; margin-top: 1.5rem; }
         .blur-overlay p { font-weight: bold; font-size: 1.1rem; margin: 0; color: #003366; }
         
-        /* Podaci za uplatu */
-        .payment-info { background: #f8f9fa; border-left: 4px solid #003366; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 1rem; }
+        /* Podaci za uplatu & QR */
+        .payment-container { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 1rem; }
+        .payment-info { flex: 1; min-width: 280px; background: #f8f9fa; border-left: 4px solid #003366; padding: 1rem 1.5rem; border-radius: 4px; }
         .payment-info ul { list-style: none; padding: 0; margin: 0; }
         .payment-info li { padding: 0.5rem 0; border-bottom: 1px solid #eee; font-size: 1.05rem; }
         .payment-info li:last-child { border-bottom: none; }
+        .qr-code-box { flex: 0 0 200px; text-align: center; background: #fafafa; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; margin: 0 auto; }
+        .qr-code-box img { max-width: 100%; height: auto; border-radius: 4px; }
         
         @media (max-width: 500px) {
             .preview-grid { grid-template-columns: 1fr; }
@@ -110,15 +119,24 @@
         <!-- UPUTSTVO ZA UPLATU -->
         <div class="card">
             <h2>Uputstvo za Otključavanje Pristupa Materijalima</h2>
-            <p>Da biste dobili godišnji pristup celokupnoj bazi rešenih zadataka i materijala za prijemni, izvršite uplatu prema sledećim podacima:</p>
+            <p>Da biste dobili godišnji pristup celokupnoj bazi rešenih zadataka i materijala za prijemni, izvršite uplatu prema sledećim podacima ili skenirajte QR kod putem m-banking aplikacije:</p>
             
-            <div class="payment-info">
-                <ul>
-                    <li><strong>Iznos:</strong> 3.000 RSD</li>
-                    <li><strong>Primalac:</strong> Ersin Gilić</li>
-                    <li><strong>Broj računa:</strong> [Unesite vaš broj tekućeg računa]</li>
-                    <li><strong>Svrha uplate:</strong> Godišnji pristup materijalima – [Ime i Prezime učenika]</li>
-                </ul>
+            <div class="payment-container">
+                <div class="payment-info">
+                    <ul>
+                        <li><strong>Iznos:</strong> 3.000 RSD</li>
+                        <li><strong>Primalac:</strong> Ersin Gilić</li>
+                        <li><strong>Broj računa:</strong> [Unesite vaš broj tekućeg računa]</li>
+                        <li><strong>Svrha uplate:</strong> Godišnji pristup materijalima – [Ime i Prezime]</li>
+                    </ul>
+                </div>
+                
+                <!-- OVDJE MOŽETE DODATI SLIKU NBS IPS QR KODA -->
+                <div class="qr-code-box">
+                    <p style="margin-top:0; font-weight:bold; font-size:0.9rem;">Skeniraj za uplatu:</p>
+                    <img src="qr-kod.png" alt="NBS IPS QR Kod za uplatu" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <p style="display:none; font-size:0.85rem; color:#666;">(Slika QR koda će se pojaviti kada dodate qr-kod.png)</p>
+                </div>
             </div>
             
             <p style="margin-top: 1.5rem; text-align: center;">
