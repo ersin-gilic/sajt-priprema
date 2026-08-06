@@ -16,7 +16,7 @@
         .preview-item { background: #fafafa; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; }
         .preview-item h3 { margin-top: 0; color: #003366; font-size: 1.2rem; text-align: center; }
         .pdf-viewer-container { width: 100%; height: 450px; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        object { width: 100%; height: 100%; }
         .blur-overlay { background: #e9ecef; border: 2px dashed #003366; padding: 1.5rem; border-radius: 6px; text-align: center; margin-top: 1.5rem; }
         .blur-overlay p { font-weight: bold; font-size: 1.1rem; margin: 0; color: #003366; }
         .payment-info { background: #f8f9fa; border-left: 4px solid #003366; padding: 1rem 1.5rem; border-radius: 4px; margin-top: 1rem; }
@@ -46,7 +46,9 @@
                 <div class="preview-item">
                     <h3>Probni Test – ETF Beograd</h3>
                     <div class="pdf-viewer-container">
-                        <iframe src="probno-etf.pdf#toolbar=0" title="Probni test ETF Beograd"></iframe>
+                        <object data="probno-etf.pdf#toolbar=0" type="application/pdf">
+                            <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-etf.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
+                        </object>
                     </div>
                 </div>
 
@@ -54,7 +56,9 @@
                 <div class="preview-item">
                     <h3>Probni Test – FON Beograd</h3>
                     <div class="pdf-viewer-container">
-                        <iframe src="probno-fon.pdf#toolbar=0" title="Probni test FON Beograd"></iframe>
+                        <object data="probno-fon.pdf#toolbar=0" type="application/pdf">
+                            <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-fon.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
+                        </object>
                     </div>
                 </div>
             </div>
