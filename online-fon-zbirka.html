@@ -5,22 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Book Zbirka FON | dr Ersin Gilić</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f6f9; text-align: center; }
-        .card { background: white; max-width: 900px; margin: 0 auto; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .pdf-frame { width: 100%; height: 800px; border: none; }
-        .back-btn { display: inline-block; margin-bottom: 15px; padding: 8px 15px; background: #003366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 10px; background-color: #f4f6f9; text-align: center; }
+        .back-btn { display: inline-block; margin: 10px 0; padding: 8px 16px; background: #003366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
         .back-btn:hover { background: #002244; }
+        
+        #lock-screen { background: white; max-width: 600px; margin: 40px auto; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-top: 5px solid #003366; }
+        .password-input { padding: 10px; width: 70%; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px; text-align: center; }
+        .submit-btn { padding: 10px 20px; font-size: 1rem; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        .submit-btn:hover { background: #218838; }
+        .payment-box { background: #f8f9fa; border-left: 4px solid #003366; padding: 15px; text-align: left; margin: 20px 0; font-size: 0.95rem; }
+
+        #ebook-content { display: none; width: 96%; max-width: 1400px; margin: 10px auto; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .pdf-frame { width: 100%; height: 85vh; border: 1px solid #ccc; border-radius: 4px; }
     </style>
 </head>
-<body oncontextmenu="return false;"> <!-- Onemogućava desni klik radi zaštite -->
+<body oncontextmenu="return false;">
 
-    <div class="card">
-        <a href="index.html" class="back-btn">← Nazad na Početnu</a>
-        <h2>E-Book Zbirka za Prijemni Ispit – FON Beograd (247 str.)</h2>
-        <p><em>Zaštićeno izdanje – samo za online čitanje</em></p>
+    <a href="index.html" class="back-btn">← Nazad na Početnu</a>
+
+    <!-- EKRAN ZA UNOS ŠIFRE -->
+    <div id="lock-screen">
+        <h2>🔒 Zaštićen Sadržaj – E-Book FON</h2>
+        <p>Pristup kompletnoj zbirci od 247 stranica dozvoljen je registrovanim korisnicima.</p>
         
+        <div class="payment-box">
+            <strong>Uputstvo za otključavanje:</strong><br>
+            Uplatu od 3.000 RSD možete izvršiti na račun:<br>
+            <strong>160-5300102238453-56</strong> (Ersin Gilić)<br>
+            Nakon uplate pošaljite sliku uplatnice na Viber/WhatsApp <strong>+381 66 521 6741</strong> kako biste dobili pristupnu šifru.
+        </div>
+
+        <form onsubmit="checkPassword(event)">
+            <label for="pass"><strong>Unesite Vašu pristupnu šifru:</strong></label><br>
+            <input type="password" id="pass" class="password-input" placeholder="Unesite šifru ovde..." required><br>
+            <button type="submit" class="submit-btn">Otključaj Zbirku</button>
+        </form>
+        <p id="error-msg" style="color: red; display: none; margin-top: 10px; font-weight: bold;">Pogrešna šifra. Proverite unete podatke ili kontaktirajte predavača.</p>
+    </div>
+
+    <!-- VELIKI PRIKAZ E-KNJIGE NAKON TAČNE ŠIFRE -->
+    <div id="ebook-content">
+        <h2>E-Book Zbirka za Prijemni Ispit – FON Beograd (247 str.)</h2>
         <iframe src="zbirka-fon-komplet.pdf#toolbar=0" class="pdf-frame"></iframe>
     </div>
+
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            var inputPass = document.getElementById('pass').value;
+            
+            // ŠIFRA ZA FON ZBIRKU (promenite "fon2026" po želji kad god hoćete):
+            if (inputPass === 'fon2026') {
+                document.getElementById('lock-screen').style.display = 'none';
+                document.getElementById('ebook-content').style.display = 'block';
+            } else {
+                document.getElementById('error-msg').style.display = 'block';
+            }
+        }
+    </script>
 
 </body>
 </html>
