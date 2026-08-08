@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priprema za Prijemni i Privatni Časovi | Matematika ETF, FON i Tehnički Fakulteti</title>
     
-    <!-- SEO Meta Tagovi za Google Pretragu -->
+    <!-- SEO Meta Tagovi -->
     <meta name="description" content="Besplatni probni testovi, detaljno rešeni zadaci i privatni časovi matematike za prijemni ispit i fakultete (ETF, FON, MATF, FTN).">
     <meta name="keywords" content="matematika prijemni, etf prijemni matematika, fon rešeni zadaci, privatni časovi matematika beograd, priprema za prijemni matematika, matematika 1 etf, matematika 2 fon, probni test etf rešenja">
     <meta name="author" content="Ersin Gilić">
@@ -26,8 +26,9 @@
         .preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
         .preview-item { background: #fafafa; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; text-align: center; }
         .preview-item h3 { margin-top: 0; color: #003366; font-size: 1.1rem; }
-        .pdf-viewer-container { width: 100%; height: 380px; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; margin-bottom: 1rem; }
-        object { width: 100%; height: 100%; }
+        
+        .pdf-viewer-container { width: 100%; height: 380px; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; margin-bottom: 1rem; background: #fff; }
+        iframe { width: 100%; height: 100%; border: none; }
         
         .download-btn { display: inline-block; background-color: #003366; color: white; padding: 0.6rem 1.1rem; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
         .download-btn:hover { background-color: #002244; }
@@ -65,7 +66,7 @@
 
     <div class="layout-container">
 
-        <!-- LEVA KOLONA: Privatni časovi i podaci za uplatu -->
+        <!-- LEVA KOLONA -->
         <aside class="sidebar">
             <div class="card">
                 <h2>Privatni Časovi & Priprema</h2>
@@ -98,10 +99,10 @@
             </div>
         </aside>
 
-        <!-- DESNA KOLONA: Glavni sadržaj -->
+        <!-- DESNA KOLONA -->
         <main class="main-content">
             
-            <!-- 1. NA VRHU: 10 BESPLATNIH STRANA ZBIRKI -->
+            <!-- 1. NA VRHU: VIZUELNI PREGLED DEMO ZBIRKI (10 STRANA) -->
             <div class="card">
                 <h2>Besplatan Pregled Zbirki (Prvih 10 Strana)</h2>
                 <p>Prelistajte demo verzije zbirki ili ih preuzmite na svoj uređaj:</p>
@@ -110,9 +111,7 @@
                     <div class="preview-item">
                         <h3>Demo Zbirka – ETF Beograd</h3>
                         <div class="pdf-viewer-container">
-                            <object data="zbirka-etf-demo.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="zbirka-etf-demo.pdf" target="_blank">Otvorite demo zbirku ovde.</a></p>
-                            </object>
+                            <iframe src="zbirka-etf-demo.pdf#toolbar=0"></iframe>
                         </div>
                         <a href="zbirka-etf-demo.pdf" download class="download-btn">📥 Preuzmi 10 besplatnih strana (ETF)</a>
                     </div>
@@ -120,16 +119,14 @@
                     <div class="preview-item">
                         <h3>Demo Zbirka – FON Beograd</h3>
                         <div class="pdf-viewer-container">
-                            <object data="zbirka-fon-demo.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="zbirka-fon-demo.pdf" target="_blank">Otvorite demo zbirku ovde.</a></p>
-                            </object>
+                            <iframe src="zbirka-fon-demo.pdf#toolbar=0"></iframe>
                         </div>
                         <a href="zbirka-fon-demo.pdf" download class="download-btn">📥 Preuzmi 10 besplatnih strana (FON)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. ISPOD: PROBNI TESTOVI -->
+            <!-- 2. SREDINA: VIZUELNI PREGLED PROBNIH TESTOVA -->
             <div class="card">
                 <h2>Besplatan Pregled Probnih Testova</h2>
                 <p>Prelistajte besplatne probne testove ili ih preuzmite direktno:</p>
@@ -138,9 +135,7 @@
                     <div class="preview-item">
                         <h3>Probni Test – ETF Beograd</h3>
                         <div class="pdf-viewer-container">
-                            <object data="probno-etf.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-etf.pdf" target="_blank">Otvorite probni test ovde.</a></p>
-                            </object>
+                            <iframe src="probno-etf.pdf#toolbar=0"></iframe>
                         </div>
                         <a href="probno-etf.pdf" download class="download-btn">📥 Preuzmi probni test (ETF)</a>
                     </div>
@@ -148,16 +143,14 @@
                     <div class="preview-item">
                         <h3>Probni Test – FON Beograd</h3>
                         <div class="pdf-viewer-container">
-                            <object data="probno-fon.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-fon.pdf" target="_blank">Otvorite probni test ovde.</a></p>
-                            </object>
+                            <iframe src="probno-fon.pdf#toolbar=0"></iframe>
                         </div>
                         <a href="probno-fon.pdf" download class="download-btn">📥 Preuzmi probni test (FON)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. NA DNU: OTKLJUČAVANJE KOMPLETNIH ZBIRKI -->
+            <!-- 3. DNO: DUGMAD ZA OTKLJUČAVANJE KOMPLETNIH ZBIRKI -->
             <div class="card">
                 <h2>Digitalne Zbirke Rešenih Zadataka (Kompletna Izdanja)</h2>
                 <p>Nakon uplate pretplate dobijate pristup celokupnoj bazi rešenih zadataka:</p>
