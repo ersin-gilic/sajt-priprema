@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priprema za Prijemni i Privatni Časovi | Matematika ETF, FON i Tehnički Fakulteti</title>
     
+    <!-- SEO Meta Tagovi za Google Pretragu -->
     <meta name="description" content="Besplatni probni testovi, detaljno rešeni zadaci i privatni časovi matematike za prijemni ispit i fakultete (ETF, FON, MATF, FTN).">
     <meta name="keywords" content="matematika prijemni, etf prijemni matematika, fon rešeni zadaci, privatni časovi matematika beograd, priprema za prijemni matematika, matematika 1 etf, matematika 2 fon, probni test etf rešenja">
     <meta name="author" content="Ersin Gilić">
@@ -41,6 +42,9 @@
         .blur-overlay { background: #e9ecef; border: 2px dashed #003366; padding: 1.2rem; border-radius: 6px; text-align: center; margin-top: 1.5rem; }
         .blur-overlay p { font-weight: bold; font-size: 1rem; margin: 0; color: #003366; }
         
+        .ebook-card { background: #fdfdfd; border: 1px solid #e2e8f0; border-left: 5px solid #003366; padding: 1.2rem; border-radius: 6px; margin-top: 1rem; }
+        .ebook-card h3 { margin-top: 0; color: #003366; font-size: 1.15rem; }
+
         .payment-info { background: #f8f9fa; border-left: 4px solid #003366; padding: 1rem; border-radius: 4px; margin-top: 1rem; }
         .payment-info ul { list-style: none; padding: 0; margin: 0; }
         .payment-info li { padding: 0.4rem 0; border-bottom: 1px solid #eee; font-size: 0.95rem; }
@@ -61,6 +65,7 @@
 
     <div class="layout-container">
 
+        <!-- LEVA KOLONA: Privatni časovi i uplata -->
         <aside class="sidebar">
             <div class="card">
                 <h2>Privatni Časovi & Priprema</h2>
@@ -78,13 +83,13 @@
 
             <div class="card">
                 <h2>Pristup Materijalima</h2>
-                <p style="font-size: 0.95rem;">Godišnji pristup kompletnoj bazi rešenih zadataka (3.000 RSD):</p>
+                <p style="font-size: 0.95rem;">Godišnji pristup kompletnoj bazi rešenih zadataka i zbirki (3.000 RSD):</p>
                 
                 <div class="payment-info">
                     <ul>
                         <li><strong>Primalac:</strong> Ersin Gilić</li>
                         <li><strong>Račun:</strong> [Vaš broj tekućeg računa]</li>
-                        <li><strong>Svrha:</strong> Access – [Ime i Prezime]</li>
+                        <li><strong>Svrha:</strong> Pristup – [Ime i Prezime]</li>
                     </ul>
                 </div>
                 <p style="font-size: 0.85rem; color: #555; text-align: center; margin-top: 0.8rem;">
@@ -93,17 +98,20 @@
             </div>
         </aside>
 
+        <!-- DESNA KOLONA: Probni testovi, besplatne stranice zbirki i e-books -->
         <main class="main-content">
+            
+            <!-- BESPLATAN PREGLED I TESTOVI -->
             <div class="card">
-                <h2>Besplatan Pregled & Preuzimanje Probnih Testova</h2>
-                <p>Prelistajte besplatne primere ili ih preuzmite na svoj uređaj radi lakše pripreme:</p>
+                <h2>Besplatan Pregled Probnih Testova</h2>
+                <p>Prelistajte besplatne probne testove ili ih preuzmite direktno na uređaj:</p>
                 
                 <div class="preview-grid">
                     <div class="preview-item">
                         <h3>Probni Test – ETF Beograd</h3>
                         <div class="pdf-viewer-container">
                             <object data="probno-etf.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-etf.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
+                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-etf.pdf" target="_blank">Otvorite probni test ovde.</a></p>
                             </object>
                         </div>
                         <a href="probno-etf.pdf" download class="download-btn">📥 Preuzmi probni test (ETF)</a>
@@ -113,22 +121,42 @@
                         <h3>Probni Test – FON Beograd</h3>
                         <div class="pdf-viewer-container">
                             <object data="probno-fon.pdf#toolbar=0" type="application/pdf">
-                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-fon.pdf" target="_blank">Kliknite ovde da otvorite test.</a></p>
+                                <p>Vaš pregledač ne podržava direktan prikaz PDF-a. <a href="probno-fon.pdf" target="_blank">Otvorite probni test ovde.</a></p>
                             </object>
                         </div>
                         <a href="probno-fon.pdf" download class="download-btn">📥 Preuzmi probni test (FON)</a>
                     </div>
                 </div>
+            </div>
+
+            <!-- DIGITALNE ZBIRKE / E-BOOKS I DEMO VERZIJE -->
+            <div class="card">
+                <h2>Digitalne Zbirke Rešenih Zadataka (E-Books)</h2>
+                <p>Prelistajte demo verzije zbirki ili otključajte kompletna izdanja:</p>
+
+                <div class="ebook-card">
+                    <h3>📘 Zbirka Zadataka za Prijemni Ispit – ETF Beograd</h3>
+                    <p>Detaljno rešeni svi zadaci razvrstani po metodološkim celinama.</p>
+                    <div style="margin-top: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="zbirka-etf-demo.pdf" target="_blank" class="download-btn">📖 Prelistaj 10 besplatnih strana (Demo)</a>
+                        <a href="online-etf-zbirka.html" class="download-btn" style="background-color: #28a745;">🔑 Kompletan E-Book (ETF)</a>
+                    </div>
+                </div>
+
+                <div class="ebook-card">
+                    <h3>📙 Zbirka Zadataka za Prijemni Ispit – FON Beograd</h3>
+                    <p>Postupno i detaljno rešeni zadaci sa prijemnih ispita za FON sa svim koracima i skicama.</p>
+                    <div style="margin-top: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="zbirka-fon-demo.pdf" target="_blank" class="download-btn">📖 Prelistaj 10 besplatnih strana (Demo)</a>
+                        <a href="online-fon-zbirka.html" class="download-btn" style="background-color: #28a745;">🔑 Kompletan E-Book (FON)</a>
+                    </div>
+                </div>
 
                 <div class="blur-overlay">
-                    <p>🔒 Ostatak kompletne zbirke i svi rešeni zadaci za sve oblasti otključavaju se nakon godišnje pretplate.</p>
+                    <p>🔒 Ostatak kompletne zbirke i svi rešeni zadaci otključavaju se slanjem uplatnice (3.000 RSD) na Viber/WhatsApp.</p>
                 </div>
             </div>
 
-            <div class="card">
-                <h2>Zbirke Rešenih Zadataka & E-Books (U izradi)</h2>
-                <p>Uskoro dostupne kompletne zbirke zadataka sa postupnim rešenjima razvrstane po oblastima za ETF i FON.</p>
-            </div>
         </main>
 
     </div>
